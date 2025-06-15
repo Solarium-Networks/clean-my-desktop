@@ -13,7 +13,7 @@ os.chdir(f'C:/Users/{Username}/desktop')
 
 FilesToDelete = []
 
-print(f"Enter the files you want to delete, {Username}")
+print(f"Enter the files you want to delete, {Username}.")
 
 while True:
   FileToAppend = input("Enter a file name with extension: ")
@@ -31,6 +31,6 @@ for filename in FilesToDelete:
     # Check if the file exists before deleting
     if os.path.isfile(FilePath):
         os.remove(FilePath)
-        print(f"Deleted: {filename}")
+        print(f"Cleaned: {filename}")
     else:
         print(f"File not found: {filename}")
